@@ -4,7 +4,7 @@ error_reporting(0);
 date_default_timezone_set('Asia/Jakarta');
 echo "===============================================\n";
 echo "           Spotify Account Creator  \n"; 
-echo "               Github : dzgif    	\n";
+echo "               Github : aniruddhsinghal5    	\n";
 echo "================================================\n";
 echo "[+] Email : ";
 $mail = trim(fgets(STDIN));
@@ -15,7 +15,7 @@ $jmlh = trim(fgets(STDIN));
 
 for ($i = 0; $i < $jmlh ; $i++) {
 	$ch = curl_init();
-$email = $mail.$i."@yopmail.com";
+$email = $mail.$i."@byom.de";
 curl_setopt($ch, CURLOPT_URL, 'https://spclient.wg.spotify.com/signup/public/v1/account/');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
